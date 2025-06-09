@@ -1,5 +1,5 @@
 import { CreateUserPayload } from '@/types';
-import { UserService } from '@/services/userService';
+import { UserService } from '@/services/api/userService';
 
 export async function createUser({ cpf, name, email, password }: CreateUserPayload) {
     

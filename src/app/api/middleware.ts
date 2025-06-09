@@ -10,7 +10,7 @@ export function middleware(request: NextRequest) {
     
     const { pathname } = request.nextUrl;
     const sessionId = request.cookies.get('sessionId')?.value;
-
+  
     if (publicRoutes.includes(pathname)) return NextResponse.next();
 
     if (!sessionId) return NextResponse.redirect(new URL('/login', request.url))

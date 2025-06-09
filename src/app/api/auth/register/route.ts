@@ -1,4 +1,4 @@
-import { createUser } from "../../../../controllers/userController";
+import { createUser } from "@/controllers/userController";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {

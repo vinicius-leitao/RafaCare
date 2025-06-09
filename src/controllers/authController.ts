@@ -1,5 +1,5 @@
 import { LoginPayload } from '@/types';
-import { AuthService } from '@/services/authService';
+import { AuthService } from '@/services/api/authService';
 
 export async function authenticate({ login, password }: LoginPayload) {
     

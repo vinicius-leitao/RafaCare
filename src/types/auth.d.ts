@@ -3,6 +3,13 @@ type LoginPayload = {
   password: string;
 }
 
+type LoginResponse = {
+  id: string,
+  name: string,
+  email: string
+}
+
 export type {
-    LoginPayload
+  LoginPayload,
+  LoginResponse
 }
